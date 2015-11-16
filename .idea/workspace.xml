@@ -90,8 +90,8 @@
       <file leaf-file-name="AuthenticUser.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/Http/Middleware/AuthenticUser.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.71525884" vertical-offset="0" max-vertical-offset="734">
-              <caret line="38" column="96" selection-start-line="38" selection-start-column="96" selection-end-line="38" selection-end-column="96" />
+            <state vertical-scroll-proportion="0.6539509" vertical-offset="0" max-vertical-offset="734">
+              <caret line="35" column="9" selection-start-line="35" selection-start-column="9" selection-end-line="35" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -753,8 +753,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Middleware/AuthenticUser.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.71525884" vertical-offset="0" max-vertical-offset="734">
-          <caret line="38" column="96" selection-start-line="38" selection-start-column="96" selection-end-line="38" selection-end-column="96" />
+        <state vertical-scroll-proportion="0.6539509" vertical-offset="0" max-vertical-offset="734">
+          <caret line="35" column="9" selection-start-line="35" selection-start-column="9" selection-end-line="35" selection-end-column="9" />
           <folding />
         </state>
       </provider>
