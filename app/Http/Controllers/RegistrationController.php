@@ -107,5 +107,6 @@ class RegistrationController extends Controller
             return view('registration/login')->with('msg','Login to see your profile');
 
     }
+    
 
 }

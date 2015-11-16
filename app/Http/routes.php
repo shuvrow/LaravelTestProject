@@ -17,6 +17,6 @@ Route::get('/', function () {
     return view('registration.registration');
 
 });
-
+//Route::get('updatedUserProfile','RegistrationController@getUpdatedUserProfile');
 
 Route::controller('registration','RegistrationController');

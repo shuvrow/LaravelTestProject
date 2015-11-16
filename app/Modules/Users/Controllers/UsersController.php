@@ -11,6 +11,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Session;
 use Event;
+use Symfony\Component\HttpFoundation\Response;
 
 class UsersController extends Controller {
 
@@ -120,6 +121,13 @@ class UsersController extends Controller {
 			Session::put(['msg'=>$msg]);
 			return redirect('Users/index');
 		}
+	}
+	public function getProfileUpdate(Request $request)
+	{
+		$messages=Users::find($request->input('user_id'))->message->count();
+		$allMessages=Users::find($request->input('user_id'))->message->lists('message');
+		$notifications=Users::find($request->input('user_id'))->notification->count();
+		return array('messages'=>$messages,'notifications'=>$notifications,'messageList'=>$allMessages);
 	}
 
 }

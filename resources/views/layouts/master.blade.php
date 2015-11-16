@@ -61,14 +61,15 @@
                     <li class="dropdown messages-menu">
                         <a href="{{asset('#')}}" class="dropdown-toggle" data-toggle="dropdown">
                             <i class="fa fa-envelope-o"></i>
-                            <span class="label label-success">{!! $messages->count() !!}</span>
+                            <span class="label label-success messageCount">{!! $messages->count() !!}</span>
+
                         </a>
                         <ul class="dropdown-menu">
-                            <li class="header">You have {!! $messages->count() !!} messages</li>
+                            <li class="header">You have <span class="messageCount">{!! $messages->count() !!} </span> messages</li>
                             <li>
                                 <!-- inner menu: contains the actual data -->
                                 @if($messages->count()>0)
-                                <ul class="menu">
+                                <ul class="menu showMessage">
                                     @foreach($messages as $message)
                                     <li><!-- start message -->
                                         <a href="{{asset('#')}}">
@@ -138,10 +139,10 @@
                     <li class="dropdown notifications-menu">
                         <a href="{{asset('#')}}" class="dropdown-toggle" data-toggle="dropdown">
                             <i class="fa fa-bell-o"></i>
-                            <span class="label label-warning">{!! $notifications->count() !!}</span>
+                            <span class="label label-warning notifications">{!! $notifications->count() !!}</span>
                         </a>
                         <ul class="dropdown-menu">
-                            <li class="header">You have {!! $notifications->count() !!} notifications</li>
+                            <li class="header">You have <span class="notifications">{!! $notifications->count() !!}</span> notifications</li>
                             {{--<li>
                                 <!-- inner menu: contains the actual data -->
                                 <ul class="menu">
@@ -1194,6 +1195,7 @@
 
 <!-- jQuery 2.1.4 -->
 <script src="{{asset('plugins/jQuery/jQuery-2.1.4.min.js')}}"></script>
+@yield('script')
 <!-- jQuery UI 1.11.4 -->
 <script src="{{asset('https://code.jquery.com/ui/1.11.4/jquery-ui.min.js')}}"></script>
 <!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
@@ -1229,5 +1231,6 @@
 <script src="{{asset('dist/js/pages/dashboard.js')}}"></script>
 <!-- AdminLTE for demo purposes -->
 <script src="{{asset('dist/js/demo.js')}}"></script>
+
 </body>
 </html>
